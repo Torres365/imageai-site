@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ImagenAI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #22C55E;
+            --dark: #0F172A;
+            --light: #F8FAFC;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --card-bg: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            background-color: var(--light);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        header h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .lang-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .lang-nav a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: white;
+            border: 1px solid #E2E8F0;
+        }
+
+        .lang-nav a:hover,
+        .lang-nav a.active {
+            color: var(--primary);
+            background: #F0FDF4;
+            border-color: var(--primary);
+        }
+
+        .policy-section {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 24px;
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-bottom: 3rem;
+            display: none;
+        }
+
+        .policy-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--dark);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p,
+        ul {
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            padding-left: 1.25rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-info {
+            background: #F0FDF4;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px dashed var(--primary);
+            margin-top: 2rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .policy-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p style="color: var(--text-muted);">Last updated: December 25, 2025</p>
+        </header>
+
+        <nav class="lang-nav">
+            <a href="#en" onclick="showLang('en')" id="btn-en">English</a>
+            <a href="#cn" onclick="showLang('cn')" id="btn-cn">简体中文</a>
+            <a href="#jp" onclick="showLang('jp')" id="btn-jp">日本語</a>
+        </nav>
+
+        <!-- English Section -->
+        <div id="en" class="policy-section">
+            <h2>1. Introduction</h2>
+            <p>Welcome to ImagenAI. This Privacy Policy describes how ImagenAI ("we", "us", or "our") handles your
+                information when you use our macOS application.</p>
+
+            <h2>2. Information Collection</h2>
+            <p><strong>Privacy is our priority.</strong> We do not collect, store, or transmit any personal
+                identification information (PII) to our servers. All sensitive data, including but not limited to:</p>
+            <ul>
+                <li>API Keys for third-party providers</li>
+                <li>User-entered Prompts</li>
+                <li>Drafted Images</li>
+                <li>App Settings</li>
+            </ul>
+            <p>Are stored strictly on your local device using standard macOS secure storage methods.</p>
+
+            <h2>3. Third-Party Services</h2>
+            <p>ImagenAI provides integration with third-party AI service providers (such as OpenAI, Google Gemini,
+                OpenRouter, and xAI). When you use these services:</p>
+            <ul>
+                <li>Your prompts and reference images are sent directly to the respective service provider's API.</li>
+                <li>This data is subject to the privacy policies and terms of service of those providers. We encourage
+                    you to review their policies.</li>
+            </ul>
+
+            <h2>4. Local Processing</h2>
+            <p>When using local AI models, all image generation and text processing occur entirely on your local
+                hardware. No data is sent to external servers in this mode.</p>
+
+            <h2>5. Data Retention</h2>
+            <p>All data remains on your device until you choose to delete it or uninstall the application. We have no
+                access to your data and cannot recover it if lost.</p>
+
+            <h2>6. Changes to This Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
+                Privacy Policy on this page.</p>
+
+            <div class="contact-info">
+                <strong>Contact Us:</strong><br>
+                For any questions regarding this privacy policy, please contact us at:
+                <a href="mailto:melowwx@gmail.com"
+                    style="color: var(--primary); text-decoration: none;">melowwx@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- Chinese Section -->
+        <div id="cn" class="policy-section">
+            <h2>1. 引言</h2>
+            <p>欢迎使用 ImagenAI。本隐私政策说明了 ImagenAI（"我们"）在您使用我们的 macOS 应用程序时如何处理您的信息。</p>
+
+            <h2>2. 信息收集</h2>
+            <p><strong>隐私是我们的首要任务。</strong> 我们不收集、存储或向我们的服务器传输任何个人身份信息 (PII)。所有敏感数据，包括但不限于：</p>
+            <ul>
+                <li>第三方服务商的 API 密钥</li>
+                <li>用户输入的提示词</li>
+                <li>生成的图像</li>
+                <li>应用设置</li>
+            </ul>
+            <p>均严格存储在您的本地设备上，采用 macOS 标准的安全存储方式。</p>
+
+            <h2>3. 第三方服务</h2>
+            <p>ImagenAI 提供了与第三方 AI 服务提供商（如 OpenAI, Google Gemini, OpenRouter 和 xAI）的集成。当您使用这些服务时：</p>
+            <ul>
+                <li>您的提示词和参考图像将直接发送到相应服务提供商的 API。</li>
+                <li>这些数据受这些提供商的隐私政策和服务条款约束。我们建议您查阅他们的政策。</li>
+            </ul>
+
+            <h2>4. 本地处理</h2>
+            <p>当使用本地 AI 模型时，所有图像生成和文本处理均完全在您的本地硬件上进行。在此模式下，不会向外部服务器发送任何数据。</p>
+
+            <h2>5. 数据保留</h2>
+            <p>所有数据均保留在您的设备中，直到您选择删除或卸载应用程序。我们无法访问您的数据，若数据丢失，我们也无法为您找回。</p>
+
+            <h2>6. 政策变更</h2>
+            <p>我们可能会不时更新隐私政策。如有变更，我们将在此页面发布新的隐私政策。</p>
+
+            <div class="contact-info">
+                <strong>联系我们：</strong><br>
+                如果您对本隐私政策有任何疑问，请通过以下方式联系：
+                <a href="mailto:melowwx@gmail.com"
+                    style="color: var(--primary); text-decoration: none;">melowwx@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- Japanese Section -->
+        <div id="jp" class="policy-section">
+            <h2>1. はじめに</h2>
+            <p>ImagenAI へようこそ。このプライバシーポリシーは、お客様が当社の macOS アプリケーションを使用する際に、ImagenAI（「当社」）がお客様の情報をどのように取り扱うかを説明するものです。</p>
+
+            <h2>2. 情報の収集</h2>
+            <p><strong>プライバシーは当社の最優先事項です。</strong>
+                当社は、いかなる個人特定情報（PII）も収集、保存、または当社のサーバーに送信することはありません。以下を含む（これらに限定されない）すべての機密データ：</p>
+            <ul>
+                <li>サードパーティプロバイダーの API キー</li>
+                <li>ユーザーが入力したプロンプト</li>
+                <li>生成された画像</li>
+                <li>アプリの設定</li>
+            </ul>
+            <p>これらは、macOS の標準的な安全なストレージ方法を使用して、お客様のローカルデバイスにのみ保存されます。</p>
+
+            <h2>3. サードパーティサービス</h2>
+            <p>ImagenAI は、サードパーティの AI サービスプロバイダー（OpenAI、Google Gemini、OpenRouter、xAI など）との統合を提供しています。これらのサービスを使用する場合：
+            </p>
+            <ul>
+                <li>お客様のプロンプトおよび参照画像は、各サービスプロバイダーの API に直接送信されます。</li>
+                <li>このデータは、当該プロバイダーのプライバシーポリシーおよび利用規約の対象となります。各プロバイダーのポリシーを確認することをお勧めします。</li>
+            </ul>
+
+            <h2>4. ローカル処理</h2>
+            <p>ローカル AI モデルを使用する場合、すべての画像生成およびテキスト処理は完全にお客様のローカルハードウェア上で行われます。このモードでは、外部サーバーにデータが送信されることはありません。</p>
+
+            <h2>5. データの保持</h2>
+            <p>すべてのデータは、お客様が削除することを選択するか、アプリケーションをアンインストールするまでデバイスに残ります。当社はお客様のデータにアクセスすることはできず、紛失した場合に回復することもできません。</p>
+
+            <h2>6. ポリシーの変更</h2>
+            <p>当社はプライバシーポリシーを随時更新することがあります。変更があった場合は、このページに新しいプライバシーポリシーを掲載することで通知いたします。</p>
+
+            <div class="contact-info">
+                <strong>お問い合わせ：</strong><br>
+                このプライバシーポリシーに関するご質問は、下記までご連絡ください：
+                <a href="mailto:melowwx@gmail.com"
+                    style="color: var(--primary); text-decoration: none;">melowwx@gmail.com</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function showLang(lang) {
+            // Hide all sections
+            document.querySelectorAll('.policy-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-nav a').forEach(el => el.classList.remove('active'));
+
+            // Show selected section
+            const target = document.getElementById(lang);
+            if (target) {
+                target.classList.add('active');
+                document.getElementById('btn-' + lang).classList.add('active');
+            }
+
+            // Update URL hash without jumping if possible (though jumping is fine for direct links)
+            // history.replaceState(null, null, '#' + lang);
+        }
+
+        // Initialize based on hash or default to English
+        const hash = window.location.hash.substring(1);
+        if (hash === 'cn' || hash === 'jp' || hash === 'en') {
+            showLang(hash);
+        } else {
+            showLang('en');
+        }
+    </script>
+</body>
+
+</html>
